@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: employeedatamanager
+    buildCommand: 'echo "No build step required for .war"'
+    startCommand: 'java -jar /opt/render/project/src/build/EmployeeDataManager.war'
+    plan: free
+    branch: main
