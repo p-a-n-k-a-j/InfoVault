@@ -1,0 +1,197 @@
+@charset "UTF-8";
+*{
+	padding:0px;
+	margin:0px;
+	box-sizing:border-box;
+	font-family: 'Roboto', sans-serif;
+
+}
+main{
+	background-image:url("../images/nature.jpeg"), linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+	background-size:100% 100%;
+	background-blend-mode:overlay;
+	height:100vh;
+	width:auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.wrapper{
+	background:black;
+	height:30rem;
+	width:40rem;
+	display:flex;
+	flex-direction:row;
+	
+}
+.image{
+	background-image:url("../images/signup.png"), linear-gradient(to right, rgba(0, 10, 10, 0.7), rgba(225, 0, 0, 0.5));
+	background-blend-mode:overlay;
+	background-size:100% 100%;
+	width:20rem;
+	height:100%;
+}
+.image h2{
+	text-align:center;
+	color:#FFFFFF;
+	width:17rem;
+	margin-left:30px;
+	overflow:hidden;
+	white-space:nowrap;
+	font-size: 1.4rem;
+	margin-top:40px;
+	border-right:4px solid;
+	letter-spacing:5px;
+	 animation: 
+        typing 2s infinite alternate,
+        cursor .4s  infinite alternate;
+				
+	
+}
+@keyframes cursor{
+	50%{border-color:transparent;}
+	
+}
+@keyframes typing{
+	from{width:0;}
+	
+}
+
+/*here started form work */
+.form-container{
+	background:#FFFFFF;
+	width:20rem;
+	height:100%;
+	display:flex;
+	flex-direction:column;
+}
+/*this code is for form heading */
+.form-heading{
+	color:#212121;
+	margin-top:20px;
+	margin-left:30px;
+}
+/*error after submit visible if error accure after submiting mainly for if user exist*/
+.error-after-submit{
+	color:red;
+	margin-top:25px;
+	margin-left:30px;
+}
+
+/* handling email error coming form the Login Servlet after login*/
+.error{
+	position:absolute;
+	top:50px;
+	left:0;
+	color:red;
+	
+}
+
+/*now here started form content like input or labels*/
+.group{
+	
+	width:600px;
+	height:50px;
+	margin-top:30px;
+	margin-left:30px;
+	position: relative;
+	
+}
+
+
+
+.label-style{
+	position: absolute;
+	left:0px;
+	top:0px;
+	color:#212121;
+	
+}
+
+.input-style{
+	position: absolute;
+	left:0px;
+	top:20px;
+	padding:5px;
+	width:15rem;
+	border:none;
+	outline:none;
+	border-bottom:1px solid #000;
+	
+}
+
+/*here start handling password eyes */
+.eye1{
+	position:absolute;
+	left:200px;
+	top:0;
+	width:20px;
+	height:20px;
+	cursor: pointer;
+}
+.eye2{
+	position:absolute;
+	left:500px;
+	top:0;
+	width:20px;
+	height:20px;
+	cursor: pointer;
+}
+/* here start styling both button and paragraph*/
+.submit{
+	position: absolute;
+	font-weight:lighter;
+	font-size:17px;
+	left:0px;
+	top:30px;
+	width:250px;
+	padding:8px;
+	border:none;
+	outline:none;
+	border-radius:2px;
+	background:#adadad;
+	position:relative;
+	z-index: 0;
+	overflow: hidden;
+	cursor: pointer;
+	
+}
+.submit::after{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom:0;
+	background:#212121;
+	height:100%;
+	z-index: -1;
+	transition: width 1s ease-in-out;
+}
+
+.submit:hover{
+	color:#FFFFFF;
+}
+.submit.animate-left::after {
+  width: 100%;
+}
+
+.submit.animate-right::after {
+  width: 0%;
+}
+
+.info{
+	position: absolute;
+	top:70px;
+	left:0;
+}
+.info a{
+	text-decoration: none;
+	font-weight:600px;
+	color:blue;
+}
+.info a:hover{
+	color:green;
+}
+
+
+
