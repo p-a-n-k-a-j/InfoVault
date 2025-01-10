@@ -1,9 +1,7 @@
 services:
   - type: web
     name: employeedatamanager
-    runtime: image
-    buildCommand: 'echo "No build step required for .war"'
-    startCommand: 'docker build -t my-app . && docker run -p 8080:8080 my-app'
+    runtime: image  # Using image runtime
+    image: pankaj2004/employeedatamanager:latest  # Specify image with tag (e.g., latest)
     plan: free
     branch: main
-
