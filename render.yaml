@@ -1,7 +1,9 @@
 services:
   - type: web
     name: employeedatamanager
-    runtime: image  # Using image runtime
-    image: pankaj2004/employeedatamanager:latest  # Specify image with tag (e.g., latest)
+    runtime: docker
+    dockerfilePath: ./src/main/webapp/Dockerfile  # Path to your Dockerfile
+    dockerContext: ./  # Context for building the Docker image
+    dockerCommand: catalina.sh run  # Command to start the container
     plan: free
     branch: main
