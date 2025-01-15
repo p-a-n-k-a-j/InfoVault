@@ -36,7 +36,7 @@
   </servlet-mapping>
   
     <session-config>
-    <session-timeout>-1</session-timeout> <!-- No timeout -->
+    <session-timeout>30</session-timeout> <!-- No timeout -->
 </session-config>
   
   <context-param>
@@ -45,7 +45,7 @@
   </context-param>
    <context-param>
   <param-name>dburl</param-name>
-  <param-value>jdbc:mysql://localhost:3386/collage</param-value>
+  <param-value>jdbc:mysql://host.docker.internal:3306/employee</param-value>
   </context-param>
   
    <context-param>
@@ -55,6 +55,6 @@
   
   <context-param>
   <param-name>dbpassword</param-name>
-  <param-value>@pankaj123</param-value>
+  <param-value>@pankaj2004</param-value>
   </context-param>
 </web-app>
