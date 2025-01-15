@@ -6,7 +6,7 @@ if (emailSession == null || emailSession.getAttribute("userEmail") == null) {
     response.sendRedirect("login.jsp");
 }
 %>
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 <head>
     <meta charset="UTF-8">
