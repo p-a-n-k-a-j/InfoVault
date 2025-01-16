@@ -49,7 +49,7 @@
 
 <section class="group">
 <button type="submit" onclick="validate()" id="submit" class="submit"> Register</button>
-<button type="reset" class="clean" id="clean"> clean</button>
+<button type="reset" class="clean" id="clean"> Reset</button>
 <p class="info"> Already have an account? <a href="login.jsp">click here</a></p>
 </section>
 

@@ -288,47 +288,8 @@ input::placeholder{
             background-color: #f2f2f2;
         }
       
-        
-        
-        /* here I design errors section that occurs during operations*/
-        
-      
-        .success{
-        position:absolute;
-        top:100px;
-        left:15px;
-       
-        color: green;
-        padding:10px;
-        font-size:1rem;
-        white-space: nowrap;
-        width:50rem;
-        overflow:hidden;
-        animation:
-        		typing 4s ease-in-out forwards;
-        }
-        .error{
-        position:absolute;
-        top:0px;
-        left:0px;
-        color: red;
-        padding:20px;
-        font-size:1.5rem;
-        white-space: nowrap;
-        width:50rem;
-        overflow:hidden;
-        animation:
-        		typing 4s ease-in-out forwards;
-        }
-        /* animation for typing */
-       @keyframes cursor{
-		50%{border-color:transparent;}
-	} 
-@keyframes typing{
-	from{width:0%;}
-
-	}
-        
+     
+   
 
   
         

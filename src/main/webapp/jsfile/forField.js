@@ -18,7 +18,7 @@ function main(){
 		})  // Adjust this URL as per your servlet mapping
 	        .then(response => response.json())  // Parse the JSON response
 	        .then(data => {
-	           employees= data;
+	           
 	            populateTable(data);  // Pass the data to populate the table
 	        })
 	        .catch(err => {
@@ -68,7 +68,7 @@ document.getElementById('searchqueary').addEventListener("input", filterdata);
 	    // Handle null or empty data
 	    if (!data || !Array.isArray(data) || data.length === 0) {
 	        const noRow = document.createElement('tr');
-	        noRow.innerHTML = '<td colspan="3">No data available</td>';
+	        noRow.innerHTML = '<td colspan="4">No data available</td>';
 	        tableBody.appendChild(noRow);
 	        return;
 	    }
@@ -144,7 +144,7 @@ document.getElementById('searchqueary').addEventListener("input", filterdata);
 	    // Check if the data is empty or not
 	    if (data.length === 0) {
 	        const noDataRow = document.createElement('tr');
-	        noDataRow.innerHTML = '<td colspan="3">No data available</td>'; // Adjust colspan for the number of columns
+	        noDataRow.innerHTML = '<td colspan="4">No data available</td>'; // Adjust colspan for the number of columns
 	        tableBody.appendChild(noDataRow);
 	    } else {
 	        // Loop through the data and create rows

@@ -1,5 +1,5 @@
 # Use an official Tomcat base image
-FROM tomcat:9.0
+FROM tomcat:9.0-jdk17
 
 # Remove default Tomcat web applications
 RUN rm -rf /usr/local/tomcat/webapps/*
@@ -12,3 +12,4 @@ EXPOSE 8080
 
 # Start Tomcat server
 CMD ["catalina.sh", "run"]
+

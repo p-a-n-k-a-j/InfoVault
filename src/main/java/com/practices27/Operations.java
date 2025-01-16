@@ -23,7 +23,7 @@ public class Operations {
     	
     	try {
 			
-			con = DriverManager.getConnection("jdbc:mysql://host.docker.internal:3306/employee", "root", "@pankaj2004");
+			con = DriverManager.getConnection("jdbc:mysql://192.168.204.234:3306/employee", "root", "@pankaj2004");
 		} catch ( SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
