@@ -53,7 +53,7 @@ public class Register extends HttpServlet {
 				request.getRequestDispatcher("index.jsp").include(request, response);
 			}
 			else {
-				System.out.println("else working");
+				out.println("working");
 				PreparedStatement inserting = con.prepareStatement("insert into authentcate (first, last, email, password) values(?, ?, ?, ?)");
 				inserting.setString(1, fname);
 				inserting.setString(2, lname);
