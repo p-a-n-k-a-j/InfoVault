@@ -39,22 +39,24 @@
     <session-timeout>30</session-timeout> <!-- No timeout -->
 </session-config>
   
-  <context-param>
+<context-param>
   <param-name>driver</param-name>
-  <param-value>com.mysql.cj.jdbc.Driver</param-value>
-  </context-param>
-   <context-param>
+  <param-value>org.postgresql.Driver</param-value>
+</context-param>
+
+<context-param>
   <param-name>dburl</param-name>
-  <param-value>jdbc:mysql://192.168.204.234:3306/employee</param-value>
-  </context-param>
-  
-   <context-param>
+  <param-value>jdbc:postgresql://dpg-cu12dilsvqrc73em3770-a.oregon-postgres.render.com:5432/employeedb_ycsd</param-value>
+</context-param>
+
+<context-param>
   <param-name>dbuserName</param-name>
-  <param-value>root</param-value>
-  </context-param>
-  
-  <context-param>
+  <param-value>employeedb_ycsd_user</param-value>
+</context-param>
+
+<context-param>
   <param-name>dbpassword</param-name>
-  <param-value>@pankaj2004</param-value>
-  </context-param>
+  <param-value>4PLj8JCFSHicv7uIlC9QTQtZMCzF1ZDk</param-value>
+</context-param>
+
 </web-app>

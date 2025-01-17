@@ -54,6 +54,7 @@ public class Login extends HttpServlet {
 		    String password = request.getParameter("password");
 		    
 		    try {
+		    	Class.forName(driver);
 				Connection con = DriverManager.getConnection(dburl, dbuserName, dbpassword);
 				PreparedStatement ps = con.prepareStatement("select * from authentcate where email=?");
 				ps.setString(1, email);
@@ -82,6 +83,9 @@ public class Login extends HttpServlet {
 				
 			} catch (SQLException e) {
 				
+				e.printStackTrace();
+			} catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 	}

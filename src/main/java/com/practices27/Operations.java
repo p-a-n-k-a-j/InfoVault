@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.servlet.http.HttpServletRequest;
+
 import javax.servlet.http.HttpServletResponse;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -20,11 +20,17 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class Operations {
     static  Connection con=null;
     static {
-    	
-    	try {
-			
-			con = DriverManager.getConnection("jdbc:mysql://192.168.204.234:3306/employee", "root", "@pankaj2004");
+    	 String jdbcURL = "jdbc:postgresql://dpg-cu12dilsvqrc73em3770-a.oregon-postgres.render.com:5432/employeedb_ycsd";
+         String username = "employeedb_ycsd_user";
+         String password = "4PLj8JCFSHicv7uIlC9QTQtZMCzF1ZDk";
+    
+         try {
+        	 Class.forName("org.postgresql.Driver");
+        	 con = DriverManager.getConnection(jdbcURL, username, password);
 		} catch ( SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
