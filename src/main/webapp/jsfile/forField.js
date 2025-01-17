@@ -9,7 +9,7 @@ function main(){
 		      operation: "retrieve"  // The operation you want to execute
 		  };
 	    // Replace 'your_servlet_url' with the correct URL to your DataOperations servlet
-		fetch('https://employeedatamanager.onrender.com/EmployeeDataManager/DatabaseOperations', {
+		fetch('https://employeedatamanager.onrender.com/DatabaseOperations', {
 		    method: 'POST',  // Use POST method for sending data
 		    headers: {
 		        'Content-Type': 'application/json'  // Set the correct content type for JSON
@@ -32,7 +32,7 @@ function filterdata(){
 			      operation: "retrieve"  // The operation you want to execute
 			  };
 		    // Replace 'your_servlet_url' with the correct URL to your DataOperations servlet
-			fetch('https://employeedatamanager.onrender.com/EmployeeDataManager/DatabaseOperations', {
+			fetch('https://employeedatamanager.onrender.com/DatabaseOperations', {
 			    method: 'POST',  // Use POST method for sending data
 			    headers: {
 			        'Content-Type': 'application/json'  // Set the correct content type for JSON
@@ -108,7 +108,7 @@ document.getElementById('searchqueary').addEventListener("input", filterdata);
 			operation: "restoreid",
 			id: "${id}"
 		}
-		fetch(`https://employeedatamanager.onrender.com/EmployeeDataManager/DatabaseOperations?id=${id}`, {
+		fetch(`https://employeedatamanager.onrender.com/DatabaseOperations?id=${id}`, {
 		        method: 'POST',
 		        headers: {
 		            'Content-Type': 'application/x-www-form-urlencoded', // You can change this header if needed
@@ -198,7 +198,7 @@ function handleUpdate() {
 	const mobile = document.getElementById('mobiledata').value;
 
 	// Send update request to the server
-	fetch(`https://employeedatamanager.onrender.com/EmployeeDataManager/DatabaseOperations?id=${upid}`, {
+	fetch(`https://employeedatamanager.onrender.com/DatabaseOperations?id=${upid}`, {
 	    method: 'POST',
 	    headers: {
 	        'Content-Type': 'application/json',
@@ -246,7 +246,7 @@ function handleUpdate() {
 	        operation: "showtrash"
 	    };
 
-	    fetch('https://employeedatamanager.onrender.com/EmployeeDataManager/DatabaseOperations', {
+	    fetch('https://employeedatamanager.onrender.com/DatabaseOperations', {
 	        method: 'POST',
 	        headers: {
 	            'Content-Type': 'application/json',
@@ -282,7 +282,7 @@ function handleUpdate() {
 				};
 
 	    // Make the GET request without the body
-	    fetch(`https://employeedatamanager.onrender.com/EmployeeDataManager/DatabaseOperations?id=${id}`, {
+	    fetch(`https://employeedatamanager.onrender.com/DatabaseOperations?id=${id}`, {
 	        method: 'POST',
 	        headers: {
 	            'Content-Type': 'application/x-www-form-urlencoded', // You can change this header if needed
@@ -316,7 +316,7 @@ function handleUpdate() {
 			id: "${id}"
 		};
 	    console.log(`Deleting record with ID: ${id}`); // Debugging: Check if the correct ID is being passed
-	    fetch(`https://employeedatamanager.onrender.com/EmployeeDataManager/DatabaseOperations?operation=delete&id=${id}`, {
+	    fetch(`https://employeedatamanager.onrender.com/DatabaseOperations?operation=delete&id=${id}`, {
 	        method: 'POST',
 			body: JSON.stringify(data)
 	    })
@@ -353,7 +353,7 @@ function handleUpdate() {
 	    const mobile = document.getElementById('mobiledata').value;
 
 	    // Make fetch request to insert data
-	    fetch('https://employeedatamanager.onrender.com/EmployeeDataManager/DatabaseOperations', {
+	    fetch('https://employeedatamanager.onrender.com/DatabaseOperations', {
 	        method: 'POST',
 	        headers: {
 	            'Content-Type': 'application/json',
