@@ -12,28 +12,27 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
+import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletResponse;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class Operations {
     static  Connection con=null;
+    
     static {
+    	 String driver ="org.postgresql.Driver";
     	 String jdbcURL = "jdbc:postgresql://dpg-cu12dilsvqrc73em3770-a.oregon-postgres.render.com:5432/employeedb_ycsd";
          String username = "employeedb_ycsd_user";
          String password = "4PLj8JCFSHicv7uIlC9QTQtZMCzF1ZDk";
     
          try {
-        	 Class.forName("org.postgresql.Driver");
+        	 Class.forName(driver);
         	 con = DriverManager.getConnection(jdbcURL, username, password);
-		} catch ( SQLException e) {
+		} catch ( ClassNotFoundException | SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		} 
     	
     }
     public static void insert(HttpServletResponse response, String name, String mob, int uid) throws IOException {
