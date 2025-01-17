@@ -29,7 +29,10 @@ public class DatabaseOperations extends HttpServlet {
     }
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    	
+    	response.setHeader("Access-Control-Allow-Origin", "*"); 
+    	response.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS");
+    	response.setHeader("Access-Control-Allow-Headers", "Content-Type");
+
         HttpSession session = request.getSession(false);
         String name = "";
         String mobile = "";
