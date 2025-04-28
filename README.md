@@ -42,7 +42,7 @@ Features ✅
 
 Usage
 1. Start the server.
-2. Open the browser and navigate to `http://localhost:8080/project-name`.
+2. Open the browser and navigate to `http://localhost:8080/EmployeeDataManager`.
 3. Follow the instructions on the UI to use the application.
 
 Contributing
