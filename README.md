@@ -57,5 +57,8 @@ For any inquiries, contact me at [pankajtirdiya2001@gmail.com](mailto:pankajtird
 
 👨‍💻 Developed by Pankaj Tirdiya
 
-LinkedIn
-GitHub
+👨‍💻 Developed by
+   Pankaj Tirdiya  
+- [LinkedIn](https://www.linkedin.com/in/pankaj-tirdiya-787543227)  
+- [GitHub](https://github.com/p-a-n-k-a-j)
+
