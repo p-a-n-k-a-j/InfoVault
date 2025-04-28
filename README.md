@@ -54,3 +54,8 @@ This project is licensed under the [MIT License](LICENSE).
 Contact
 For any inquiries, contact me at [pankajtirdiya2001@gmail.com](mailto:pankajtirdiya200@gmail.com).
 
+
+👨‍💻 Developed by Pankaj Tirdiya
+
+LinkedIn
+GitHub
