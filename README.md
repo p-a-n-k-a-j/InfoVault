@@ -1,64 +1,170 @@
-Data Manager
+# InfoVault
 
-Description
-Data Manager is a web application designed to efficiently manage user data.
-It allows users to perform CRUD operations on user information, provides data visualization based on user emails, 
-and includes additional features like authentication, theming, and backup functionality.
+A secure user data management web application built using Java, JSP, Servlets, and MySQL.
 
-Features ✅
+InfoVault enables authenticated users to manage records efficiently through a clean interface, advanced search capabilities, data recovery mechanisms, backup support, and interactive data visualization.
 
-✅ Fully Authenticated web app with data visualization based on user email
+The application focuses on data organization, security, and usability while providing a complete CRUD-based management solution.
 
-✅ Theme option available, allowing users to switch between dark and light mode
+---
 
-✅ Insert, Update, and Delete User Data
+## 🚀 Key Features
 
-✅ Search User by Name or Mobile Number
+### 🔐 Authentication & Security
 
-✅ View and Delete Trash Data
+* Secure user authentication system
+* Session-based access control
+* Input validation to reduce invalid data submissions
 
-✅ Backup Functionality
+### 👤 User Data Management
 
-✅ Input Validation to Prevent Errors
+* Create, update, and delete records
+* View and manage stored user information
+* Efficient data organization and retrieval
 
-## Technologies Used
-- Java
-- JSP & Servlet
-- MySQL
-- HTML, CSS, JavaScript
+### 🔍 Smart Search
 
+* Search users by:
 
-## Installation
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/p-a-n-k-a-j/InfoVault.git
-   ```
-2. Navigate to the project directory:
-   ```sh
-   cd InfoVault
-   ```
-3. Set up the database and update configurations.
-4. Deploy on Tomcat or any other server.
+  * Name
+  * Mobile Number
+* Quick access to required records
 
-Usage
-1. Start the server.
-2. Open the browser and navigate to `http://localhost:8080/EmployeeDataManager`.
-3. Follow the instructions on the UI to use the application.
+### 🗑️ Trash Management
 
-Contributing
-Contributions are welcome! Feel free to submit issues or pull requests.
+* Soft-delete functionality
+* View deleted records
+* Permanently remove unwanted data
+* Recover data when required
 
-License
-This project is licensed under the [MIT License](LICENSE).
+### 📊 Data Visualization
 
-Contact
-For any inquiries, contact me at [pankajtirdiya2001@gmail.com](mailto:pankajtirdiya200@gmail.com).
+* Visual representation of stored data
+* User email-based insights and statistics
 
+### 💾 Backup Support
 
+* Backup data for improved reliability
+* Helps prevent accidental data loss
 
+### 🎨 User Experience
 
-👨‍💻 Developed by
-   Pankaj Tirdiya  
-- [LinkedIn](https://www.linkedin.com/in/pankaj-tirdiya-787543227)  
-- [GitHub](https://github.com/p-a-n-k-a-j)
+* Responsive interface
+* Dark Mode and Light Mode support
+* Clean and intuitive UI
 
+---
+
+## 🛠️ Tech Stack
+
+### Backend
+
+* Java
+* JSP
+* Servlets
+
+### Database
+
+* MySQL
+
+### Frontend
+
+* HTML
+* CSS
+* JavaScript
+
+### Server
+
+* Apache Tomcat
+
+---
+
+## 📂 Core Functionalities
+
+* Authentication
+* CRUD Operations
+* Search & Filtering
+* Trash Management
+* Backup System
+* Theme Management
+* Data Visualization
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/p-a-n-k-a-j/InfoVault.git
+```
+
+### 2. Navigate to Project
+
+```bash
+cd InfoVault
+```
+
+### 3. Configure Database
+
+* Create MySQL database
+* Import required tables
+* Update database credentials
+
+### 4. Deploy Application
+
+Deploy the project on:
+
+* Apache Tomcat
+* Any Servlet-compatible server
+
+### 5. Run Application
+
+Open:
+
+```text
+http://localhost:8080/EmployeeDataManager
+```
+
+---
+
+## 🎯 Learning Outcomes
+
+This project helped strengthen my understanding of:
+
+* Java Web Development
+* JSP & Servlets
+* Session Management
+* CRUD Operations
+* MySQL Integration
+* Form Validation
+* MVC-based Application Structure
+* UI/UX Design Principles
+
+---
+
+## 🔮 Future Enhancements
+
+* Role-Based Access Control (RBAC)
+* Email Notifications
+* Export to PDF/Excel
+* Audit Logging
+* REST API Integration
+* Docker Deployment
+* Cloud Hosting
+
+---
+
+## 👨‍💻 Developer
+
+Pankaj Tirdiya
+
+📧 Email: [pankajtirdiya2001@gmail.com](mailto:pankajtirdiya2001@gmail.com)
+
+🔗 LinkedIn: [www.linkedin.com/in/pankaj-tirdiya-787543227]
+
+🔗 GitHub: https://github.com/p-a-n-k-a-j
+
+---
+
+⭐ If you found this project useful, consider giving it a star.
