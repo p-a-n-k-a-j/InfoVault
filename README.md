@@ -15,6 +15,7 @@ The application focuses on data organization, security, and usability while prov
 * Secure user authentication system
 * Session-based access control
 * Input validation to reduce invalid data submissions
+* Users can access and manage only their own data
 
 ### 👤 User Data Management
 
@@ -145,13 +146,15 @@ This project helped strengthen my understanding of:
 
 ## 🔮 Future Enhancements
 
-* Role-Based Access Control (RBAC)
-* Email Notifications
-* Export to PDF/Excel
-* Audit Logging
-* REST API Integration
-* Docker Deployment
-* Cloud Hosting
+- Email Notifications
+- Export Data to PDF/Excel
+- Audit Logging
+- REST API Integration
+- Docker Deployment
+- Cloud Hosting (AWS/GCP/Azure)
+- Multi-User Role Management
+- Data Sharing & Collaboration Features
+- Advanced Analytics Dashboard
 
 ---
 
